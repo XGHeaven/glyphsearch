@@ -1,7 +1,16 @@
 {
   "name": "GlyphSearch",
   "version": "1.3.0",
-  "description": "Search for icons from Font Awesome, Glyphicons, and Ionicons",
+  "description": "Search for icons from Font Awesome, Glyphicons, and Ionicons, Used as desktop app with across platform, rewrite with @XGHeaven, Retain the copyright of original author",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build:common": "electron-packager ./ GlyphSearch --overwrite=true --ignore ./output/ --out ./output/ --version=0.35.4",
+    "build:osx": "npm run build:common -- --platform=darwin --arch=x64",
+    "build:win": "npm run build:common -- --platform=win32 --arch=all",
+    "build:linux": "npm run build:common -- --platform=linux --arch=all",
+    "build:all": "npm run build:common -- --platform=all --arch=all"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/thomaspark/glyphsearch.git"

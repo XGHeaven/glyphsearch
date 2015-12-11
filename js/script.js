@@ -236,9 +236,11 @@
     });
 
     clip.on("error", function(e) {
+      console.log(e);
       $(".icons").on("click", ".entry", function() {
         var text = copyText($(this));
-        window.prompt("Copy to clipboard:", text);
+        // because electron don't support prompt
+        //window.prompt("Copy to clipboard:", text);
       });
     });
   }

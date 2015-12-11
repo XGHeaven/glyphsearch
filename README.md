@@ -4,7 +4,11 @@ Search for icons from Font Awesome, Foundation, Glyphicons, IcoMoon, Ionicons, M
 
 ## Build
 
-Run `grunt build` to build after you've modified the icon data in `/data`.
+```
+npm run build:all
+```
+
+to build linux, win, mac app in `optput` folder
 
 ## Author
 
@@ -25,3 +29,5 @@ Thanks to the [contributors](https://github.com/thomaspark/glyphsearch/graphs/co
 * [Ionicons](http://ionicons.com)
 * [Material Design](https://www.google.com/design/icons/)
 * [Octicons](http://octicons.github.com/)
+
+## rewriter XGHeaven
